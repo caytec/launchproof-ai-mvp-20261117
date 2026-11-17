@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">LaunchProof AI meme coin screening tool</title>
+  <desc id="desc">Compare meme coin launch claims with available evidence.</desc>
+  <rect width="1200" height="630" fill="#10131a"/>
+  <rect x="55" y="55" width="1090" height="520" rx="30" fill="#191e28" stroke="#30394a"/>
+  <text x="110" y="170" fill="#79f2c0" font-family="Arial,sans-serif" font-size="34" font-weight="700">LAUNCHPROOF AI</text>
+  <text x="110" y="270" fill="#f5f7fb" font-family="Arial,sans-serif" font-size="58" font-weight="700">Meme coin screening</text>
+  <text x="110" y="340" fill="#aab3c4" font-family="Arial,sans-serif" font-size="28">Compare launch claims with available evidence.</text>
+  <text x="110" y="500" fill="#aab3c4" font-family="Arial,sans-serif" font-size="22">Rules-first reports · Timestamped findings · No signup</text>
+</svg>
