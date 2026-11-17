@@ -1,0 +1,14 @@
+{
+  "name": "launchproof-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rules-first meme coin screening MVP",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "check": "node --check js/app.js && node --check api/generate.js",
+    "test": "node tests/run-tests.js"
+  }
+}
