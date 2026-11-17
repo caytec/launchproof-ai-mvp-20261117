@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meme Coin Due Diligence Tool | LaunchProof AI</title>
+  <meta name="description" content="Compare meme coin launch claims with the evidence you provide and generate a timestamped, rules-first screening report.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#10131a">
+  <meta property="og:title" content="Meme Coin Due Diligence Tool | LaunchProof AI">
+  <meta property="og:description" content="Compare meme coin launch claims with available evidence and clearly label verified, contradicted, and unknown findings.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LaunchProof AI">
+  <meta property="og:image" content="og-image.svg">
+  <meta property="og:image:alt" content="LaunchProof AI meme coin due diligence screening tool">
+  <meta property="og:image:type" content="image/svg+xml">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Meme Coin Due Diligence Tool | LaunchProof AI">
+  <meta name="twitter:description" content="Compare meme coin launch claims with available evidence and clearly label verified, contradicted, and unknown findings.">
+  <meta name="twitter:image" content="og-image.svg">
+  <meta name="twitter:image:alt" content="LaunchProof AI meme coin due diligence screening tool">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "LaunchProof AI",
+    "description": "A rules-first meme coin screening tool that compares promotional claims with available evidence and clearly labels unknowns.",
+    "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "Research tool",
+    "operatingSystem": "Web",
+    "browserRequirements": "Requires JavaScript",
+    "isAccessibleForFree": true,
+    "featureList": [
+      "Token address format validation",
+      "Promotional claim extraction",
+      "Timestamped screening reports",
+      "Deterministic fallback reporting"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="LaunchProof AI home">LaunchProof<span>AI</span></a>
+    <nav aria-label="Main navigation">
+      <a href="./privacy.html">Privacy</a>
+      <a href="./terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Evidence reconciliation for token launches</p>
+      <h1 id="page-title">Meme coin screening, without the hype.</h1>
+      <p class="lede">
+        Compare promotional claims with the evidence you provide and receive a rules-first screening report.
+        External chain and market data are not checked unless a supported data provider is connected.
+      </p>
+
+      <form id="analyze-form" class="card form-card">
+        <label for="chain">Blockchain</label>
+        <select id="chain" name="chain" required>
+          <option value="solana">Solana</option>
+          <option value="base">Base</option>
+        </select>
+
+        <label for="address">Token contract or mint address</label>
+        <input
+          id="address"
+          name="address"
+          maxlength="128"
+          required
+          autocomplete="off"
+          autocapitalize="none"
+          spellcheck="false"
+          inputmode="text"
+          placeholder="Paste an address">
+
+        <label for="promo">Promotional text <span>(optional)</span></label>
+        <textarea
+          id="promo"
+          name="promo"
+          maxlength="5000"
+          rows="6"
+          spellcheck="true"
+          placeholder="Paste claims from a launch post, website, or community message."></textarea>
+
+        <button id="submit-button" type="submit">Generate screening report</button>
+        <p id="status" class="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <noscript>
+      <p class="card">
+        JavaScript is required to generate a screening report. The informational content and limitations remain available without JavaScript.
+      </p>
+    </noscript>
+
+    <section
+      id="report"
+      class="card report hidden"
+      aria-labelledby="report-title"
+      aria-live="polite"
+      aria-busy="false"
+      tabindex="-1">
+      <div class="report-head">
+        <div>
+          <p class="eyebrow">Automated screening report</p>
+          <h2 id="report-title">Report</h2>
+        </div>
+        <button id="download-card" class="secondary" type="button">Download share card</button>
+      </div>
+      <div id="report-content"></div>
+    </section>
+
+    <section class="info-grid" aria-label="Product limitations">
+      <article class="card">
+        <h2>What LaunchProof checks</h2>
+        <p>Address format, chain context, promotional claims, deterministic signals, and important unknowns.</p>
+      </article>
+      <article class="card">
+        <h2>What it does not do</h2>
+        <p>It does not verify token existence, predict prices, identify people, issue trading instructions, or declare a project safe or fraudulent.</p>
+      </article>
+    </section>
+
+    <section class="disclaimer">
+      <strong>Important:</strong> This is an automated research and screening report, not financial advice and not a guarantee of safety, legitimacy, or future performance. “Verified” means available evidence supports a narrow claim at the report timestamp. Missing data is not evidence of safety.
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 LaunchProof AI</span>
+    <span><a href="./privacy.html">Privacy</a> · <a href="./terms.html">Terms</a></span>
+  </footer>
+
+  <script>
+    window.LAUNCHPROOF_SITE_URL = "";
+  </script>
+  <script src="js/app.js"></script>
+</body>
+</html>
